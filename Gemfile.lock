@@ -2,7 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     daemons (1.1.9)
+    dotenv (0.7.0)
     eventmachine (1.0.3)
+    faraday (0.8.7)
+      multipart-post (~> 1.1)
+    multipart-post (1.2.0)
     newrelic_rpm (3.6.2.96)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -21,6 +25,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dotenv
+  faraday
   newrelic_rpm
   sinatra
   thin
