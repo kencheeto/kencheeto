@@ -10,17 +10,26 @@ class LastFMClient
   end
 
   def loved_tracks
-    response = @conn.get '', {
-      method: 'user.getLovedTracks',
-      api_key: @key,
-      format: 'json',
-      user: 'kencheeto'
-    }
+    api 'user.getLovedTracks'
+  end
+
+  private
+
+  def api method, user: 'kencheeto'
+    response = @conn.get '', defaults.merge({
+      method: method,
+      user: user
+    })
 
     JSON.parse response.body
   end
 
-  private
+  def defaults
+    @defaults ||= {
+      api_key: @key,
+      format: 'json'
+    }
+  end
 
   def root_url
     'http://ws.audioscrobbler.com/2.0'
