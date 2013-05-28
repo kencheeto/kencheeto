@@ -13,6 +13,10 @@ class LastFMClient
     api 'user.getLovedTracks'
   end
 
+  def top_artists
+    api 'user.getTopArtists'
+  end
+
   private
 
   def api method, user: 'kencheeto'
