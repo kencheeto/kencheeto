@@ -1,12 +1,12 @@
 require 'faraday'
-require 'json'
+require 'faraday_middleware'
 
 class LastFMClient
   def initialize key
     @key = key
-    @conn = Faraday.new(
-      url: root_url
-    )
+    @conn = Faraday.new( url: root_url ) do |conn|
+      conn.response :mashify
+    end
   end
 
   def loved_tracks
