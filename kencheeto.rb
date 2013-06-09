@@ -1,5 +1,7 @@
 require 'dotenv'; Dotenv.load # load variables into ENV from .env
 require 'sinatra'
+require 'sass'
+require './lastfm_client'
 
 get '/' do
   erb :index
@@ -12,9 +14,12 @@ get '/top_artists' do
   '</ul>'
 end
 
+get '/stylesheet.css' do
+  scss :stylesheet
+end
+
 private
 
 def lastfm_client
-  require './lastfm_client'
   @client ||= LastFM::Client.new ENV['LASTFM_KEY']
 end
