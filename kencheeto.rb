@@ -2,6 +2,7 @@ require 'dotenv'; Dotenv.load # load variables into ENV from .env
 require 'sinatra'
 require 'sass'
 require './lastfm_client'
+require 'kramdown'
 
 get '/' do
   erb :index
