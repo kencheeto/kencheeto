@@ -28,7 +28,7 @@ module LastFM
       response = @conn.get '', defaults.merge({
         method: method,
         user: user
-        })
+      })
 
       response.body
     end
