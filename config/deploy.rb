@@ -29,6 +29,7 @@ after "deploy", "deploy:cleanup" # keep only the last 5 releases
 
 set :rack_env, :production
 
+set :normalize_asset_timestamps, false
 
 namespace :deploy do
   %w[start stop restart].each do |command|
