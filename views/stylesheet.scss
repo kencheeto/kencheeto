@@ -1,34 +1,40 @@
-body {
-  background-image: url('https://dl.dropboxusercontent.com/u/1403664/background.jpg');
-  background-position: right 38%;
+html {
+  height: 100%;
+  font-family: sans-serif;
 }
 
-.main {
+body {
+  min-height: 100%;
+  background-image: url('https://dl.dropboxusercontent.com/u/1403664/background-cropped.jpg');
+  // background-position: right 38%;
+  background-position: bottom right, 0 0;
+}
 
-  h1 {
-    background-color: rgba(255, 165, 0, 0.2);
-    font-size: 2em;
-    padding-left: 1em;
-    color: white;
-  }
+h1 {
+  letter-spacing: -0.1em;
+  background-color: rgba(255, 165, 0, 0.2);
+  font-size: 2em;
+  padding-left: 1em;
+  color: white;
+}
 
-  ul {
-    margin: 0;
-    padding: 0;
-  }
+ul {
+  margin: 0;
+  padding: 0;
+}
 
-  li {
-    list-style: none;
-    margin-bottom: 1em;
-  }
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
 
-  a {
-    background-color: rgba(255, 165, 0, 0.2);
-    font-size: 2em;
-    padding: 0 1em 0 2em;
-    color: white;
-    letter-spacing: -.11em;
-    font-weight: bold;
-    font-size: 32px;
-  }
+a {
+  text-decoration: none;
+  background-color: rgba(255, 165, 0, 0.2);
+  font-size: 2em;
+  padding: 0 1em 0 2em;
+  color: white;
+  letter-spacing: -.11em;
+  font-weight: bold;
+  font-size: 32px;
 }
