@@ -3,7 +3,7 @@ require 'dotenv/capistrano'
 
 # for chruby
 default_run_options[:shell] = '/bin/bash'
-set :ruby_version, "2.0.0-p353"
+set :ruby_version, "2.1"
 set :chruby_config, "/etc/profile.d/chruby.sh"
 set :set_ruby_cmd, "source #{chruby_config} && chruby #{ruby_version}"
 set(:bundle_cmd) {
