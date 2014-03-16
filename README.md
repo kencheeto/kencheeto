@@ -1,6 +1,3 @@
-kencheeto
-=========
+http://kencheeto.com
 
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kencheeto/kencheeto/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+My personal site. Couple links, nothing really.
