@@ -4,9 +4,15 @@ html {
 }
 
 body {
-  background-image: url("background.jpg");
-  background-position: bottom right, 0 0;
-  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+img {
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 h1 {
