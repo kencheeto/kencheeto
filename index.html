@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="normalize.min.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Kenshiro Nakagawa</title>
 
     <script>
@@ -11,7 +11,7 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', '<%= ENV['GA_TRACKING_ID'] %>', 'kencheeto.com');
+      ga('create', 'UA-41591324-1', 'kencheeto.com');
       ga('send', 'pageview');
     </script>
 
@@ -29,6 +29,11 @@
 
   </head>
   <body>
-    <%= yield %>
+    <h1>kenshiro nakagawa</h1>
+    <ul>
+      <li><a href="https://github.com/kencheeto">github</a></li>
+      <li><a href="https://twitter.com/kencheeto">twitter</a></li>
+      <li><a href="https://www.linkedin.com/profile/view?id=82486042">linkedin</a></li>
+    </ul>
   </body>
 </html>

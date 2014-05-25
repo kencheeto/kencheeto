@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-image: url('https://dl.dropboxusercontent.com/u/1403664/background-cropped.jpg');
+  background-image: url("background.jpg");
   background-position: bottom right, 0 0;
   background-repeat: no-repeat;
 }
