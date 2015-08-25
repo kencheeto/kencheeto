@@ -1,7 +1,7 @@
 require 'rack'
 
 use Rack::Static,
-  urls: ['/css', '/images'],
+  urls: ['/dist', '/images'],
   root: '.'
 
 run lambda { |env|
