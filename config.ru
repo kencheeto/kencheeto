@@ -1,8 +1,12 @@
 require 'rack'
 
+use Rack::Deflater
 use Rack::Static,
   urls: ['/assets'],
-  root: '.'
+  root: '.',
+  header_rules: [
+    [:all, {'Cache-Control' => 'public, max-age=86400'}]
+  ]
 
 run lambda { |env|
   [
