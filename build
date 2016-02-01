@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-postcss --use autoprefixer src.css -o styles.css
