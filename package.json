@@ -7,8 +7,8 @@
     "url": "git+https://github.com/kencheeto/kencheeto.git"
   },
   "scripts": {
-    "build": "postcss --use autoprefixer src.css -o styles.css"
-  }
+    "build": "postcss --use autoprefixer src.css -o build/styles.css"
+  },
   "author": "Kenshiro Nakagawa <kencheeto@gmail.com>",
   "bugs": {
     "url": "https://github.com/kencheeto/kencheeto/issues"
