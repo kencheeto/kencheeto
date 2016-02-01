@@ -1,3 +1,2 @@
 #!/usr/bin/env bash
-postcss --use autoprefixer src/styles.css -d assets
-echo "postcss --use autoprefixer src/styles.css -d assets"
+postcss --use autoprefixer src.css -o styles.css
