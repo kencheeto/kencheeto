@@ -1,5 +1,5 @@
-html {
-  font-family: 'Oxygen', Verdana;
+body {
+  font-family: 'Oxygen';
 }
 
 img {
@@ -13,6 +13,8 @@ h1 {
   text-align: center;
   font-weight: lighter;
   margin-bottom: 2em;
+  font-size: 2em;
+  margin-top: .67em;
 }
 
 section {
