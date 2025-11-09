@@ -12,20 +12,33 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <!-- DNS prefetch for external domains -->
+    <link rel="dns-prefetch" href="https://kenshiro.notion.site" />
+    <link rel="dns-prefetch" href="https://hachyderm.io" />
+    <link rel="dns-prefetch" href="https://twitter.com" />
+    <link rel="dns-prefetch" href="https://www.instagram.com" />
+    <link rel="dns-prefetch" href="https://github.com" />
+    <link rel="dns-prefetch" href="https://www.last.fm" />
+    <link rel="dns-prefetch" href="https://www.linkedin.com" />
+    <link rel="dns-prefetch" href="https://www.anthropic.com" />
     <title>Kenshiro Nakagawa</title>
     <style>
       body {
-        font-family: system-ui;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        max-width: min(90%, 650px);
+        margin: auto;
+        background-color: #ffffff;
+        color: #000000;
       }
 
       h1 {
         margin: 0.5em 0;
         font-size: 2em;
+        line-height: 1.2;
       }
 
-      body {
-        max-width: 90%;
-        margin: auto;
+      h2 {
+        line-height: 1.3;
       }
 
       li,
@@ -34,13 +47,65 @@
         margin: 1em 0;
       }
 
+      img {
+        border-radius: 8px;
+      }
+
       a {
-        color: rgb(138, 75, 42);
+        color: rgb(115, 62, 35);
+        text-decoration: underline;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: rgb(92, 50, 28);
+      }
+
+      a:focus-visible {
+        outline: 2px solid rgb(115, 62, 35);
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+
+      /* Dark mode support */
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #1a1a1a;
+          color: #e0e0e0;
+        }
+
+        a {
+          color: rgb(210, 150, 120);
+        }
+
+        a:hover {
+          color: rgb(230, 170, 140);
+        }
+
+        a:focus-visible {
+          outline-color: rgb(210, 150, 120);
+        }
+      }
+
+      /* Print styles */
+      @media print {
+        img {
+          display: none;
+        }
+
+        a {
+          color: #000;
+          text-decoration: underline;
+        }
+
+        body {
+          max-width: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <img src="face-resized.webp" alt="headshot" height="224" width="224" />
+    <img src="face-resized.webp" alt="headshot" height="224" width="224" loading="eager" />
     <h1>kenshiro nakagawa</h1>
     <p>
       Hi! I'm a software engineer with a focus on improving the lives of
